@@ -22,7 +22,7 @@
 			
 	footer > section {float: left; margin-left: 5%;}
 			
-	.container {display: flex; justify-content: center; align-items: center; }
+	.container {display: flex; justify-content: center; align-items: center; margin-top: 5%;}
 	
 	.container1{display: flex; justify-content: center; align-items: center; padding: 2%;}
 				

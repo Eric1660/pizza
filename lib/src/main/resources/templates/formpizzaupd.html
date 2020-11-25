@@ -22,10 +22,19 @@
 	<main>
 		<div class="container">
 			<form action="#" th:action="@{'/upd/' + ${id}}" method=post>
-	    	Sabor: <input type="text" th:field="${antigo.sabor}">
-	    	Preço: <input type="text" th:field="${antigo.preco}">
-	    	Descrição: <input type="text" th:field="${antigo.descricao}">
-	    	<input type="submit" value="Cadastrar">
+		    <div class="container1">
+		    	Sabor: <input type="text" th:field="${antigo.sabor}">
+		    </div>
+		    <div class="container1">
+		    	Preço: <input type="text" th:field="${antigo.preco}">
+		    </div>
+		    <div class="container1">
+		    	Descrição: <input type="text" th:field="${antigo.descricao}">
+		    </div>
+	    	<div class="container1">
+	    		<input type="submit" value="Cadastrar">
+	    	</div>
+	    	
 	    	</form>
     	</div>
 	</main>
