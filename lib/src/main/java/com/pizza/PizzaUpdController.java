@@ -21,7 +21,7 @@ public class PizzaUpdController {
 	@Autowired
 	private ApplicationContext context;
 	
-	@GetMapping("/upd/{id}")
+	@GetMapping("/upd3/{id}")
     public String updateForm(@PathVariable("id") int id, Model model){
 		PizzaService pdao = context.getBean(PizzaService.class);
 		Map<String,Object> antigo = pdao.getPizza(id);
@@ -31,7 +31,7 @@ public class PizzaUpdController {
 		return "formpizzaupd";
     }
 	
-	@PostMapping("/upd/{id}")
+	@PostMapping("/upd3/{id}")
 	public String update(@PathVariable("id") int id,@ModelAttribute Pizza piz, Model model) {
 		PizzaService pdao = context.getBean(PizzaService.class);
 		pdao.updatePizza(id, piz);

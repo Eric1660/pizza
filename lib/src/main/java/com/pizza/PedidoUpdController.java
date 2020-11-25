@@ -21,7 +21,7 @@ public class PedidoUpdController {
 	@Autowired
 	private ApplicationContext context;
 	
-	@GetMapping("/upd/{id}")
+	@GetMapping("/upd2/{id}")
     public String updateForm(@PathVariable("id") int id, Model model){
 		PedidoService pdao = context.getBean(PedidoService.class);
 		Map<String,Object> antigo = pdao.getPedido(id);
@@ -31,7 +31,7 @@ public class PedidoUpdController {
 		return "formpedidoupd";
     }
 	
-	@PostMapping("/upd/{id}")
+	@PostMapping("/upd2/{id}")
 	public String update(@PathVariable("id") int id,@ModelAttribute Pedido ped, Model model) {
 		PedidoService pdao = context.getBean(PedidoService.class);
 		pdao.updatePedido(id, ped);

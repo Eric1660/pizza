@@ -38,7 +38,7 @@ public class PedidoController {
 	}
 		
 		
-	@GetMapping("descr/{id}")
+	@GetMapping("descr2/{id}")
 	    public String read(@PathVariable("id") int id, Model model){
 			PedidoService pdao = context.getBean(PedidoService.class);
 			Map<String,Object> pedido = pdao.getPedido(id);
@@ -55,7 +55,7 @@ public class PedidoController {
 			return "pedidolista";
 		}
 		
-		@PostMapping("/apagar/{id}")
+		@PostMapping("/apagar2/{id}")
 		public String deletar(@PathVariable("id") int id,Model model) {
 			PedidoService pdao = context.getBean(PedidoService.class);
 			pdao.deletePedido(id);

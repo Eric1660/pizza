@@ -37,7 +37,7 @@ public class PizzaController {
 	}
 		
 		
-	@GetMapping("descr/{id}")
+	@GetMapping("descr3/{id}")
 	    public String read(@PathVariable("id") int id, Model model){
 			PizzaService pdao = context.getBean(PizzaService.class);
 			Map<String,Object> pizza = pdao.getPizza(id);
@@ -54,7 +54,7 @@ public class PizzaController {
 			return "pizzalista";
 		}
 		
-		@PostMapping("/apagar/{id}")
+		@PostMapping("/apagar3/{id}")
 		public String deletar(@PathVariable("id") int id,Model model) {
 			PizzaService pdao = context.getBean(PizzaService.class);
 			pdao.deletePizza(id);
