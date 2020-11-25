@@ -47,7 +47,7 @@ public class ClienteController {
 			return "clientesucesso";
 	    }
 		
-		@GetMapping("/cliente")
+		@GetMapping("/clientes")
 		public String listar(Model model) {
 			ClienteService pdao = context.getBean(ClienteService.class);
 			List<Map<String,Object>> cliente = pdao.getCliente();

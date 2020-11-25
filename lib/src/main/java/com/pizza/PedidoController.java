@@ -47,7 +47,7 @@ public class PedidoController {
 			return "pedidosucesso";
 	    }
 		
-		@GetMapping("/pedido")
+		@GetMapping("/pedidos")
 		public String listar(Model model) {
 			PedidoService pdao = context.getBean(PedidoService.class);
 			List<Map<String,Object>> pedido = pdao.getPedido();
