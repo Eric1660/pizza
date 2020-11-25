@@ -21,34 +21,36 @@
 		</nav>
 	</header>
 	<main>
-	    <table class="table table-striped table-primary">
-    	<thead class="ttop">
-        	<tr class="table-info">
-            	<td><b>ID</b></td>
-            	<td><b>SABOR</b> </td>
-            	<td><b>NOME</b> </td>
-            	<td> </td>
-            	<td> </td>
-        	</tr>
-    	</thead>
-    	<tbody>
-        	<tr th:each="ped : ${pedido}">
-            	<td th:text="${ped.id}"></td>
-            	<td th:text="${ped.sabor}"></td>
-            	<td th:text="${ped.nome}"></td>
-            	<td>
-            		<a th:href="@{'upd/' + ${ped.id}}">
-            			Editar
-            		</a>
-            	</td>
-            	<td> 
-            		<form th:action="@{'apagar/' + ${ped.id}}" method=post>
-            			<input type="submit" value="X">
-            		</form>
-            	</td>
-       		</tr>
-     	</tbody>
-    </table>
+		  <div class="container1">
+		    <table class="table table-striped table-primary">
+	    	<thead class="ttop">
+	        	<tr class="table-info">
+	            	<td><b>ID</b></td>
+	            	<td><b>SABOR</b> </td>
+	            	<td><b>NOME</b> </td>
+	            	<td> </td>
+	            	<td> </td>
+	        	</tr>
+	    	</thead>
+	    	<tbody>
+	        	<tr th:each="ped : ${pedido}">
+	            	<td th:text="${ped.id}"></td>
+	            	<td th:text="${ped.sabor}"></td>
+	            	<td th:text="${ped.nome}"></td>
+	            	<td>
+	            		<a th:href="@{'upd/' + ${ped.id}}">
+	            			Editar
+	            		</a>
+	            	</td>
+	            	<td> 
+	            		<form th:action="@{'apagar/' + ${ped.id}}" method=post>
+	            			<input type="submit" value="X">
+	            		</form>
+	            	</td>
+	       		</tr>
+	     	</tbody>
+	    </table>
+	   </div>
 	</main>
 	<footer>
 	
