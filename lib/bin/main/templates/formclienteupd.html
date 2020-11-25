@@ -20,12 +20,14 @@
 		</nav>
 	</header>
 	<main>
-		<form action="#" th:action="@{'/upd/' + ${id}}" method=post>
-    	Nome: <input type="text" th:field="${antigo.nome}">
-    	email: <input type="text" th:field="${antigo.email}">
-    	Endereço: <input type="text" th:field="${antigo.endereco}">
-    	<input type="submit" value="Cadastrar">
-    	</form>
+		<div class="container">
+			<form action="#" th:action="@{'/upd/' + ${id}}" method=post>
+	    	Nome: <input type="text" th:field="${antigo.nome}">
+	    	email: <input type="text" th:field="${antigo.email}">
+	    	Endereço: <input type="text" th:field="${antigo.endereco}">
+	    	<input type="submit" value="Cadastrar">
+	    	</form>
+    	</div>
 	</main>
 	<footer>
 	

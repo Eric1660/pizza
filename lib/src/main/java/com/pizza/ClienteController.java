@@ -38,7 +38,7 @@ public class ClienteController {
 	}
 		
 		
-		@GetMapping("descr/{id}")
+	@GetMapping("descr/{id}")
 	    public String read(@PathVariable("id") int id, Model model){
 			ClienteService pdao = context.getBean(ClienteService.class);
 			Map<String,Object> cliente = pdao.getCliente(id);

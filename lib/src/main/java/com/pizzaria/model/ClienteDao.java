@@ -50,7 +50,7 @@ public class ClienteDao extends JdbcDaoSupport{
     }
     
     public void updateCliente(int id,Cliente clie) {
-    	String sql = "UPDATE produto SET nome = ?, email = ?, endereco = ?, WHERE id = ?";
+    	String sql = "UPDATE cliente SET nome = ?, email = ?, endereco = ?, WHERE id = ?";
     	 jdbc.update(sql, new Object[]{
     			 clie.getNome(), clie.getEmail(), clie.getEndereco()
          });
