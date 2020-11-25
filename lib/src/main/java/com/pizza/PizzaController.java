@@ -46,7 +46,7 @@ public class PizzaController {
 			return "pizzasucesso";
 	    }
 		
-		@GetMapping("/produtos")
+		@GetMapping("/pizza")
 		public String listar(Model model) {
 			PizzaService pdao = context.getBean(PizzaService.class);
 			List<Map<String,Object>> pizza = pdao.getPizza();

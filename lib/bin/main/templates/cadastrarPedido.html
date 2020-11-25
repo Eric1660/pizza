@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Cadastramento de Cliente</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<header>
+		<article>
+			<h1>Sistema de Pizzaria</h1>
+		</article>
+		
+		<nav>
+			<ul>
+				<li><a href="cadastrarCliente.html">Cadastro de Cliente</a></li>
+				<li><a href="cadastrarOrder.html">Cadastro de Pedido</a></li>
+				<li><a href="cadastrarPizza.html">Cadastro de Pizza</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	<div>
+		<h2>Formulário de Cadastramento de Pedido</h2>
+	</div>
+	<div class="container">
+		<form action="#" th:action="@{/pedido}" th:object="${ped}" method=post>
+	    <div class="container1">
+	    	Sabor: <input type="text" th:field="*{sabor}">
+	     </div> 
+	    <div class="container1">	
+	    	Nome do Cliente: <input type="text" th:field="*{nome}">
+	     </div> 
+	    <div class="container1">
+	    	<input type="submit" value="Cadastrar">
+	     </div> 	
+	      <div class="container1">
+	    	<a href="index.html">Voltar</a>
+	    </div> 
+	    </form>
+	  </div> 
+	</main>
+	<footer>
+	
+		<section>
+			<h2>Projeto feito por:</h2>
+			<p>Bruno Pereira</p>
+			<p>Eric Pasini Martins</p>
+			<p>Thiago Augusto</p>
+		</section>
+		
+	 </footer>
 </body>
 </html>
