@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+	* {box-sizing: border-box;}
+	
+	body {margin: 0 auto; background-color: #CB333B; display: flex; min-height: 100%; flex-wrap: wrap;}
+	
+	header {height: 30%; width: 100%; color: #ffffff;}
+			
+	header > article {font-size: 3vm; float: left; margin-left: 10%;}
+	
+	header > nav {color: #ffffff; float: right; margin-right: 10%;}
+	
+	nav ul li {display: inline-block; padding-right: 15px;}
+	
+	a {color: #ffffff; text-decoration: none; }
+	
+	main {width: 100%; text-align: center; color: #ffffff;}
+	
+	header, footer { background-color: #007A33; clear: both; flex-basis: 100%; padding: 1%;}
+	
+	footer {height: 30%; width: 100%; color: #ffffff; position: absolute; bottom: 0;}
+			
+	footer > section {float: left; margin-left: 5%;}
+			
+	.container {display: flex; justify-content: center; align-items: center; }
+	
+	.container1{display: flex; justify-content: center; align-items: center; padding: 2%;}
+				
