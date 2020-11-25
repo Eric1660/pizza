@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Pedido Cadastrado</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ <header>
+ 	<article>
+			<h1>Sistema de Pizzaria</h1>
+		</article>
+ 	<nav>
+			<ul>
+				<li><a href="cadastrarCliente.html">Cadastro de Cliente</a></li>
+				<li><a href="cadastrarOrder.html">Cadastro de Pedido</a></li>
+				<li><a href="cadastrarPizza.html">Cadastro de Pizza</a></li>
+			</ul>
+		</nav>
+ </header>
+ <main>
+	<div class="container">
+	 <h2>Pedido CADASTRADO</h2>
+	   <div th:text="'sabor : ' + ${ped.sabor} "></div>
+	   <div th:text="'nome : ' + ${ped.nome} "></div>
+	 </div>
+	 <div class="container">
+	 	<a href="/pedido">Voltar</a> 
+	</div>
+ </main>
+<footer>
+	
+		<section>
+			<h2>Projeto feito por:</h2>
+			<p>Bruno Pereira</p>
+			<p>Eric Pasini Martins</p>
+			<p>Thiago Augusto</p>
+		</section>
+		
+</footer>
 </body>
 </html>
