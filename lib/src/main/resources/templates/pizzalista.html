@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Cadastramento de Pizza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<header>
+		<article>
+			<h1>Sistema de Pizzaria</h1>
+		</article>
+		
+		<nav>
+			<ul>
+				<li><a href="cadastrarCliente.html">Cadastro de Cliente</a></li>
+				<li><a href="cadastrarOrder.html">Cadastro de Pedido</a></li>
+				<li><a href="cadastrarPizza.html">Cadastro de Pizza</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	    <table class="table table-striped table-primary">
+    	<thead class="ttop">
+        	<tr class="table-info">
+            	<td><b>ID</b></td>
+            	<td><b>SABOR</b> </td>
+            	<td><b>PRECO</b> </td>
+            	<td><b>DESCRICAO</b> </td>
+            	<td> </td>
+            	<td> </td>
+        	</tr>
+    	</thead>
+    	<tbody>
+        	<tr th:each="piz : ${pizza}">
+            	<td th:text="${piz.id}"></td>
+            	<td th:text="${piz.sabor}"></td>
+            	<td th:text="${piz.preco}"></td>
+            	<td th:text="${piz.descricao}"></td>
+            	<td>
+            		<a th:href="@{'upd/' + ${piz.id}}">
+            			Editar
+            		</a>
+            	</td>
+            	<td> 
+            		<form th:action="@{'apagar/' + ${piz.id}}" method=post>
+            			<input type="submit" value="X">
+            		</form>
+            	</td>
+       		</tr>
+     	</tbody>
+    </table>
+	</main>
+	<footer>
+	
+		<section>
+			<h2>Projeto feito por:</h2>
+			<p>Bruno Pereira</p>
+			<p>Eric Pasini Martins</p>
+			<p>Thiago Augusto</p>
+		</section>
+		
+	 </footer>
 </body>
 </html>
