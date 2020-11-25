@@ -34,18 +34,18 @@
 	        	</tr>
 	    	</thead>
 	    	<tbody>
-	        	<tr th:each="piz : ${pizza}">
+	        	<tr th:each="piz : ${pizzas}">
 	            	<td th:text="${piz.id}"></td>
 	            	<td th:text="${piz.sabor}"></td>
 	            	<td th:text="${piz.preco}"></td>
 	            	<td th:text="${piz.descricao}"></td>
 	            	<td>
-	            		<a th:href="@{'upd/' + ${piz.id}}">
+	            		<a th:href="@{'upd3/' + ${piz.id}}">
 	            			Editar
 	            		</a>
 	            	</td>
 	            	<td> 
-	            		<form th:action="@{'apagar/' + ${piz.id}}" method=post>
+	            		<form th:action="@{'apagar3/' + ${piz.id}}" method=post>
 	            			<input type="submit" value="X">
 	            		</form>
 	            	</td>

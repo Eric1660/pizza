@@ -34,18 +34,18 @@
 	        	</tr>
 	    	</thead>
 	    	<tbody>
-	        	<tr th:each="clie : ${cliente}">
+	        	<tr th:each="clie : ${clientes}">
 	            	<td th:text="${clie.id}"></td>
 	            	<td th:text="${clie.nome}"></td>
 	            	<td th:text="${clie.email}"></td>
 	            	<td th:text="${clie.endereco}"></td>
 	            	<td>
-	            		<a th:href="@{'upd/' + ${clie.id}}">
+	            		<a th:href="@{'upd1/' + ${clie.id}}">
 	            			Editar
 	            		</a>
 	            	</td>
 	            	<td> 
-	            		<form th:action="@{'apagar/' + ${clie.id}}" method=post>
+	            		<form th:action="@{'apagar1/' + ${clie.id}}" method=post>
 	            			<input type="submit" value="X">
 	            		</form>
 	            	</td>

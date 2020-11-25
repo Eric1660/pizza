@@ -33,17 +33,17 @@
 	        	</tr>
 	    	</thead>
 	    	<tbody>
-	        	<tr th:each="ped : ${pedido}">
+	        	<tr th:each="ped : ${pedidos}">
 	            	<td th:text="${ped.id}"></td>
 	            	<td th:text="${ped.sabor}"></td>
 	            	<td th:text="${ped.nome}"></td>
 	            	<td>
-	            		<a th:href="@{'upd/' + ${ped.id}}">
+	            		<a th:href="@{'upd2/' + ${ped.id}}">
 	            			Editar
 	            		</a>
 	            	</td>
 	            	<td> 
-	            		<form th:action="@{'apagar/' + ${ped.id}}" method=post>
+	            		<form th:action="@{'apagar2/' + ${ped.id}}" method=post>
 	            			<input type="submit" value="X">
 	            		</form>
 	            	</td>
