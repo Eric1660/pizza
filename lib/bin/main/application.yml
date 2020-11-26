@@ -3,10 +3,10 @@ port : 8080
 
 spring:
 datasource:
-platform: postgre
-url: jdbc:postgresql://ec2-3-216-89-250.compute-1.amazonaws.com:5432/d8n6fnv901ka5j
-username: giwxequolmhvxt
-password: 811a06f3a712831c1dc449ba81684670e46d34d547a259dd2256118ea4516bad
+platform: postgres
+url: jdbc:postgresql://ec2-18-210-180-94.compute-1.amazonaws.com/de4mi7i5ja4ofs
+username: xcucdglcodduyh
+password: a0544eb337676ae130b735344a455b79bac522fac4b637c51af09c5c3e9d798d
 driveClassName: org.postgresql.Driver
 initialization-mode: always
 initialize: true
