@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Cadastramento de Pedido</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="style.css">
+	<meta charset="ISO-8859-1">
+	<title>Cadastramento de Pedido</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
 		<article>
 			<h1>Sistema de Pizzaria</h1>
 		</article>
-		
+
 		<nav>
 			<ul>
 				<li><a href="cadastrarCliente.html">Cadastro de Cliente</a></li>
@@ -21,44 +23,45 @@
 		</nav>
 	</header>
 	<main>
-	<div>
-		<h2>Formulário de Cadastramento de Cliente</h2>
-	</div>
-	<div class="container">
-		<form action="#" th:action="@{/cliente}" th:object="${clie}" method=post>
-	    <div class="container1">
-	    	Nome: <input type="text" th:field="*{nome}">
-	     </div> 
-	    <div class="container1">	
-	    	E-mail: <input type="text" th:field="*{email}">
-	     </div> 
-	    <div class="container1">	
-	    	Endereço: <input type="text" th:field="*{endereco}">
-	     </div> 
-	    <div class="container1">
-	    	<input type="submit" value="Cadastrar">
-	     </div>
-	     <div class="container1">
-	    	<a href="clientelista.html">Lista de Cliente</a>
-	    </div>
-	     <div class="container1">
-	    	<a href="formclienteupd.html">Atualizar Cliente</a>
-	    </div> 	
-	      <div class="container1">
-	    	<a href="index.html">Voltar</a>
-	    </div> 
-	    </form>
-	  </div> 
+		<div>
+			<h2>Formulï¿½rio de Cadastramento de Cliente</h2>
+		</div>
+		<div class="container">
+			<form action="#" th:action="@{/cliente}" th:object="${clie}" method=post>
+				<div class="container1">
+					Nome: <input type="text" th:field="*{nome}">
+				</div>
+				<div class="container1">
+					E-mail: <input type="text" th:field="*{email}">
+				</div>
+				<div class="container1">
+					Endereï¿½o: <input type="text" th:field="*{endereco}">
+				</div>
+				<div class="container1">
+					<button type="submit" class="btn btn-success" value="Cadastrar">Cadastrar </button>
+				</div>
+				<div class="container1">
+					<a href="clientelista.html">Lista de Cliente</a>
+				</div>
+				<div class="container1">
+					<a href="formclienteupd.html">Atualizar Cliente</a>
+				</div>
+				<div class="container1">
+					<a href="index.html">Voltar</a>
+				</div>
+			</form>
+		</div>
 	</main>
 	<footer>
-	
+
 		<section>
-			<h2>Projeto feito por:</h2>
+			<h4>Projeto feito por:</h4>
 			<p>Bruno Pereira</p>
 			<p>Eric Pasini Martins</p>
-			<p>Thiago Augusto</p>
+			<p>Thiago Augusto FM Alvarenga</p>
 		</section>
-		
-	 </footer>
+
+	</footer>
 </body>
+
 </html>
