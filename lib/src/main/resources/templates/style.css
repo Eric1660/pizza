@@ -70,11 +70,41 @@ footer>section {
 	margin-left: 5%;
 }
 
+form{
+	padding: 20px;
+	background-color: #9a1118;
+	box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.form-tbl{
+	padding: 0;
+    background-color: transparent;
+    box-shadow: none
+}
+.table-info, .table-info>td, .table-info>th{
+	background-color: #CEF9CE;
+}
+.table-primary, .table-primary>td, .table-primary>th{
+	background-color: #CEF9CE;
+}
+.table-info tbody+tbody, .table-info td, .table-info th, .table-info thead th{
+	border-color: #CEF9CE;
+}
+.table-primary tbody+tbody, .table-primary td, .table-primary th, .table-primary thead th{
+	border-color: #CEF9CE;
+}
+.logo-pizza{
+	font-size: 1.5rem;
+}
+.tlt-page{
+	margin-top: 50px;
+}
+
 .container {
 	width:500px;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5%;
+	margin-top: 30px;
 }
 
 .container1 {

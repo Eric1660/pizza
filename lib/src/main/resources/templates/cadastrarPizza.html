@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<article>
-			<h1>Sistema de Pizzaria</h1>
+			<h1 class="logo-pizza">Sistema de Pizzaria</h1>
 		</article>
 
 		<nav>
@@ -26,27 +26,34 @@
 	</header>
 	<main>
 		<div>
-			<h2>Formulário de Cadastramento de Pizza</h2>
+			<h2 class="tlt-page">Formulário de Cadastramento de Pizza</h2>
 		</div>
 		<div class="container">
 			<form action="#" th:action="@{/pizza}" th:object="${piz}" method=post>
 				
-				<div class="container1">
-					Sabor: <input type="text" th:field="*{sabor}">
+				<div class="form-group">
+					<label class="col-form-label">Sabor:</label>
+					<input type="text" class="form-control form-control-sm"  th:field="*{sabor}">
 				</div>
-				<div class="container1">
-					Preço <input type="text" th:field="*{preco}">
+				<div class="form-group">
+					<label class="col-form-label">Preço:</label>
+					<input type="text" class="form-control form-control-sm" th:field="*{preco}">
 				</div>
-				<div class="container1">
-					Descrição: <input type="text" th:field="*{descricao}">
+				<div class="form-group">
+					<label class="col-form-label">Descrição:</label>
+					<input type="text" class="form-control form-control-sm" th:field="*{descricao}">
 				</div>
-				<div class="container1">
+				<div class="form-group">
 					<button type="submit" class="btn btn-success" value="Cadastrar">Cadastrar</button>
 				</div>
 
 				<div class="mini-menu">
 					<p><a href="pizzalista.html">Lista de Pizza</a> | <a href="formpizzaupd.html">Atualizar Pizzas</a></p>
-					<p><a href="index.html">Voltar</a></p>
+					<p><a href="index.html">Voltar <svg width="1em" height="1em" viewBox="0 0 16 16"
+								class="bi bi-arrow-90deg-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z" />
+							</svg></a></p>
 				</div>
 			</form>
 		</div>
