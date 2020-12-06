@@ -39,6 +39,10 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 }
+a:hover{
+	text-decoration: none;
+	color:#ADC964;
+}
 
 main {
 	width: 100%;
@@ -78,4 +82,7 @@ footer>section {
 	justify-content: center;
 	align-items: center;
 	padding: 2%;
+}
+.mini-menu{
+	font-size: 13px;
 }
