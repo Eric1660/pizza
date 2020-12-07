@@ -32,6 +32,7 @@ header>nav {
 
 nav ul li {
 	display: inline-block;
+	font-size: 20px;
 	padding-right: 15px;
 }
 
@@ -94,7 +95,15 @@ form{
 	border-color: #CEF9CE;
 }
 .logo-pizza{
-	font-size: 1.5rem;
+	position: absolute;
+    top: 0;
+    left: 5%;
+    text-align: center;
+    width: 200px;
+    height: 68px;
+	z-index: 9999;
+    background: url(img/mamma-pizza2.png) no-repeat;
+
 }
 .tlt-page{
 	margin-top: 50px;
